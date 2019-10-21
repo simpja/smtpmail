@@ -12,4 +12,33 @@ var textFromFile = fs.readFileSync(filePath);
 
 // Parse text from secret file
 var mailObj = JSON.parse(textFromFile);
-console.log(mailObj.mailTo);
+
+// Set up nodemailer and a so called transport
+var nodemailer = require('nodemailer');
+
+var transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+           user: mailObj.mailFrom,
+           pass: mailObj.password
+       }
+   });
+
+// Configure email
+
+const mailOptions = {
+    from: mailObj.mailFrom,
+    to: mailObj.mailTo,
+    subject: 'Test av smtp',
+    html: '<p>Some text</p>' // mail body in HTML
+};
+
+// Send mail
+
+transporter.sendMail(mailOptions, function (err, info) {
+    if (err){
+        console.log(err)
+    } else {
+        console.log(info);
+    }
+});

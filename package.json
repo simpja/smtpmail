@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/simpja/smtpmail/issues"
   },
-  "homepage": "https://github.com/simpja/smtpmail#readme"
+  "homepage": "https://github.com/simpja/smtpmail#readme",
+  "dependencies": {
+    "nodemailer": "^6.3.1"
+  }
 }
