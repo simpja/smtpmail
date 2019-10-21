@@ -1,0 +1,23 @@
+{
+  "name": "smtpmail",
+  "version": "1.0.0",
+  "description": "sending mail with smpt",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simpja/smtpmail.git"
+  },
+  "keywords": [
+    "smtp",
+    "nodemailer"
+  ],
+  "author": "simpja",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simpja/smtpmail/issues"
+  },
+  "homepage": "https://github.com/simpja/smtpmail#readme"
+}
