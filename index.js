@@ -50,3 +50,5 @@ transporter.sendMail(mailOptions, function (err, info) {
         console.log(info);
     }
 });
+
+// Hei jeg bare kommenterer helt nederst her :) Ha en fin dag/ kveld <3 
