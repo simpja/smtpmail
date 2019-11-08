@@ -50,3 +50,4 @@ transporter.sendMail(mailOptions, function (err, info) {
         console.log(info);
     }
 });
+
